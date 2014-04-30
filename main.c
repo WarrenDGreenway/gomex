@@ -297,15 +297,6 @@ void bootTimeout( void )
     //ucFirstCall = TRUE;
 }
 
-void handleBTConnectButton( void )
-{
-    delay( 500 );
-    pinGet( BT_CONNECT ) ? pinSet( BT_RESET, HIGH ) : pinSet( BT_RESET, LOW );
-    pinGet( BT_CONNECT ) ? pinSet( LED1, HIGH ) : pinSet( LED1, LOW );
-    print( STDIO, "BT_CONNECT" );
-    print( COM2, "$$$CFI" );
-}
-
 void setUARTMode( u8 Mode )
 {
     if ( Mode == LOOPBACK ) {

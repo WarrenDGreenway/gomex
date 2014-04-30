@@ -704,6 +704,7 @@ u8 cmd_set_com( u8 *buffer )
 
 u8 cmd_set_pipe( u8 *buffer )
 {
+    
 
     return( FALSE );
 }

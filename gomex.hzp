@@ -17,6 +17,7 @@
       <file file_name="pygmyos/core/pygmy_rtc.c"/>
       <file file_name="pygmyos/core/pygmy_xmodem.c"/>
       <file file_name="pygmyos/profiles/memory/sst25vf.c"/>
+      <file file_name="pygmy_com.cpp"/>
     </folder>
     <folder Name="System Files">
       <file file_name="$(StudioDir)/source/thumb_crt0.s"/>
