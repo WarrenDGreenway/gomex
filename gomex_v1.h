@@ -16,6 +16,8 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ***************************************************************************/
 
+#pragma once
+
 #define __PYGMYGOMEX
 
 #define LED1                PC6
@@ -23,12 +25,20 @@
 #define BAT1                PC4
 #define BAT2                PC5
 #define BT_CONNECT          PC3
-#define MODE0               PC2
-#define MODE1               PC1
-#define MODE2               PC0
+#define MCOM1_MODE0         PC13
+#define MCOM1_MODE1         PC1
+#define MCOM1_MODE2         PC11
+
+#define MCOM2_MODE0         PC8
+#define MCOM2_MODE1         PC12
+#define MCOM2_MODE2         PD2
 #define CURRENT_OUT         PB0
-#define VOLTAGE_OUT         PB1
-#define BT_RESET            PC11
+#define VOUT1               PB1
+#define VOUT2               PB2
+#define VOUT3               PB5
+#define VOUT4               PB6
+#define VOUT5               PA8
+//#define BT_RESET            PC11
 #define ENABLE_RES          PB7
 
 #define FLASH_CS            PA4

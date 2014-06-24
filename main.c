@@ -414,7 +414,7 @@ int main( void )
     pinSet( LED1, LOW );
     pinSet( LED2, LOW );
     //pinSet( BT_CONNECT, HIGH );
-    pinInterrupt( (void*)handleBTConnectButton, BT_CONNECT, TRIGGER_RISING|TRIGGER_FALLING, 2 );
+    //pinInterrupt( (void*)handleBTConnectButton, BT_CONNECT, TRIGGER_RISING|TRIGGER_FALLING, 2 );
     adcEnableChannel( VOLTAGE_OUT );
     adcEnableChannel( CURRENT_OUT );
     adcSingleSampleInit();

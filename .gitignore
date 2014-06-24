@@ -1,1 +1,4 @@
+pymgyos
 pygmyos/*.*
+*.o
+*.d

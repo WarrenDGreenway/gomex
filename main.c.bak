@@ -297,15 +297,6 @@ void bootTimeout( void )
     //ucFirstCall = TRUE;
 }
 
-void handleBTConnectButton( void )
-{
-    delay( 500 );
-    pinGet( BT_CONNECT ) ? pinSet( BT_RESET, HIGH ) : pinSet( BT_RESET, LOW );
-    pinGet( BT_CONNECT ) ? pinSet( LED1, HIGH ) : pinSet( LED1, LOW );
-    print( STDIO, "BT_CONNECT" );
-    print( COM2, "$$$CFI" );
-}
-
 void setUARTMode( u8 Mode )
 {
     if ( Mode == LOOPBACK ) {
@@ -423,7 +414,7 @@ int main( void )
     pinSet( LED1, LOW );
     pinSet( LED2, LOW );
     //pinSet( BT_CONNECT, HIGH );
-    pinInterrupt( (void*)handleBTConnectButton, BT_CONNECT, TRIGGER_RISING|TRIGGER_FALLING, 2 );
+    //pinInterrupt( (void*)handleBTConnectButton, BT_CONNECT, TRIGGER_RISING|TRIGGER_FALLING, 2 );
     adcEnableChannel( VOLTAGE_OUT );
     adcEnableChannel( CURRENT_OUT );
     adcSingleSampleInit();

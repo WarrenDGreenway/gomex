@@ -24,7 +24,7 @@
 
 #pragma once
 
-#define __PYGMYNEBULA
+//#define __PYGMYNEBULA
 #define __PYGMYSTREAMS
     #define __PYGMYSTREAMCOM4
     #define __PYGMYSTREAMCOM3
